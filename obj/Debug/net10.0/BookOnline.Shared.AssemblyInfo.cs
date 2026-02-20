@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MILO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a181cb5cb01e3ae82a403a78466e3fb8f73d82af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45cf402aaf929f3a4ccc7c7beb8e8de4f6a29a00")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookOnline.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookOnline.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
