@@ -22,7 +22,7 @@ jobs:
           # این خط برای متصل شدن به NuGet گیت‌هاب حیاتی است
           source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Restore dependencies
         run: dotnet restore Shared/Shared.csproj
