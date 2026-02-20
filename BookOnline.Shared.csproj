@@ -6,7 +6,7 @@
   <PackageId>BookOnlineSystem.Shared.Contracts</PackageId>
   <Version>1.1.0</Version>
   <Authors>Milad</Authors>
-  <Company>MILO</Company>
+  <Company>BookOnlineSystem</Company>
   <RepositoryUrl>https://github.com/milad6117/BookOnlineSystemShared</RepositoryUrl>
   </PropertyGroup>
 

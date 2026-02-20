@@ -11,10 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MILO")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("BookOnlineSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0+5f7df13004bde4e393214b3688ec1afd6af22bb6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0+0e27528ab92705624a23275f1cff827ba3d9554a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookOnline.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookOnline.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]
