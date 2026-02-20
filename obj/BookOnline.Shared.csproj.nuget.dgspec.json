@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\OnlineBook\\Shared\\BookOnline.Shared\\BookOnline.Shared.csproj": {
-      "version": "1.1.0",
+      "version": "1.2.0",
       "restore": {
         "projectUniqueName": "D:\\OnlineBook\\Shared\\BookOnline.Shared\\BookOnline.Shared.csproj",
         "projectName": "BookOnlineSystem.Shared.Contracts",
