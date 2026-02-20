@@ -28,13 +28,13 @@ jobs:
         run: dotnet restore BookOnline.Shared.csproj
 
       - name: Build
-        run: dotnet restore BookOnline.Shared.csproj --configuration Release --no-restore
+        run: dotnet build BookOnline.Shared.csproj --configuration Release --no-restore
 
       - name: Test
-        run: dotnet restore BookOnline.Shared.csproj --no-build --verbosity normal
+        run: dotnet test BookOnline.Shared.csproj --no-build --verbosity normal
 
       - name: Pack
-        run: dotnet restore BookOnline.Shared.csproj --configuration Release --no-build -o out
+        run: dotnet pack BookOnline.Shared.csproj --configuration Release --no-build -o out
 
       - name: Push to GitHub Packages
         # از توکن داخلی گیت‌هاب برای احراز هویت استفاده می‌کند
