@@ -1,0 +1,42 @@
+name: Publish Shared Package
+
+on:
+  push:
+    branches: [ "main" ] # هر وقت روی برنچ main پوش کنی اجرا می‌شود
+    paths:
+      - 'Shared/**' # فقط اگر تغییری در پوشه Shared رخ دهد اجرا شود
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write # اجازه نوشتن پکیج در GitHub Packages
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+          # این خط برای متصل شدن به NuGet گیت‌هاب حیاتی است
+          source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restore dependencies
+        run: dotnet restore Shared/Shared.csproj
+
+      - name: Build
+        run: dotnet build Shared/Shared.csproj --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test Shared/Shared.csproj --no-build --verbosity normal
+
+      - name: Pack
+        run: dotnet pack Shared/Shared.csproj --configuration Release --no-build -o out
+
+      - name: Push to GitHub Packages
+        # از توکن داخلی گیت‌هاب برای احراز هویت استفاده می‌کند
+        run: dotnet nuget push out/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --skip-duplicate
