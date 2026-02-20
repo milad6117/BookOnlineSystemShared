@@ -4,7 +4,7 @@
 <TargetFramework>net10.0</TargetFramework> <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 <ImplicitUsings>enable</ImplicitUsings> <Nullable>enable</Nullable>
   <PackageId>BookOnlineSystem.Shared.Contracts</PackageId>
-  <Version>1.0.0</Version>
+  <Version>1.1.0</Version>
   <Authors>Milad</Authors>
   <Company>MILO</Company>
   <RepositoryUrl>https://github.com/milad6117/BookOnlineSystemShared</RepositoryUrl>

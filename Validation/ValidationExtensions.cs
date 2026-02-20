@@ -8,7 +8,7 @@ using FluentResults;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ProjectManagement.Framework.Errors.Extension
+namespace BookOnline.Shared.Validation
 {
     public static class ValidationExtensions
     {

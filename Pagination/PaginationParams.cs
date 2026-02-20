@@ -1,6 +1,6 @@
 ﻿
 
-namespace ProjectManagement.Framework.Pagination
+namespace BookOnline.Shared.Pagination
 {
     public class PaginationParams
     {

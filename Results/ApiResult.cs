@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProjectManagement.Framework.ApiResult
+namespace BookOnline.Shared.Results
 {
     public class ApiResult<T>
     {

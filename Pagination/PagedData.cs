@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProjectManagement.Framework.Pagination
+namespace BookOnline.Shared.Pagination
 {
     public class PagedData<T>
     {

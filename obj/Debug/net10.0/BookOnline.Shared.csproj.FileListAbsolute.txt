@@ -10,3 +10,4 @@ D:\OnlineBook\Shared\BookOnline.Shared\obj\Debug\net10.0\BookOnline.Shared.dll
 D:\OnlineBook\Shared\BookOnline.Shared\obj\Debug\net10.0\refint\BookOnline.Shared.dll
 D:\OnlineBook\Shared\BookOnline.Shared\obj\Debug\net10.0\BookOnline.Shared.pdb
 D:\OnlineBook\Shared\BookOnline.Shared\obj\Debug\net10.0\ref\BookOnline.Shared.dll
+D:\OnlineBook\Shared\BookOnline.Shared\obj\Debug\net10.0\BookOnline.Shared.sourcelink.json
