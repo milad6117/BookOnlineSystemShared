@@ -25,16 +25,16 @@ jobs:
           NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Restore dependencies
-        run: dotnet restore Shared/Shared.csproj
+        run: dotnet restore BookOnline.Shared.csproj
 
       - name: Build
-        run: dotnet build Shared/Shared.csproj --configuration Release --no-restore
+        run: dotnet restore BookOnline.Shared.csproj --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test Shared/Shared.csproj --no-build --verbosity normal
+        run: dotnet restore BookOnline.Shared.csproj --no-build --verbosity normal
 
       - name: Pack
-        run: dotnet pack Shared/Shared.csproj --configuration Release --no-build -o out
+        run: dotnet restore BookOnline.Shared.csproj --configuration Release --no-build -o out
 
       - name: Push to GitHub Packages
         # از توکن داخلی گیت‌هاب برای احراز هویت استفاده می‌کند
